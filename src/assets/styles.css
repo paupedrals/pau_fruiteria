@@ -1,0 +1,80 @@
+/* Main container that holds both fruit list and shopping list */
+.main-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+    gap: 40px; /* Space between the two sections */
+}
+
+/* Fruit container styles */
+.fruit-container {
+    flex: 1; /* Takes up 50% of the available width */
+    color:black;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.fruit-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid green;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #eaffea; /* Light green background */
+}
+
+.fruit-details {
+    display: flex;
+    flex-direction: column;
+}
+
+.fruit-button {
+    background-color: #4CAF50; /* Green button */
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.fruit-button:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
+/* Shopping list container styles */
+.shopping-list {
+    flex: 1; /* Takes up 50% of the available width */
+    max-width: 400px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+button {
+    background-color: #ff4d4d; /* Red button */
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #e60000; /* Darker red on hover */
+}
